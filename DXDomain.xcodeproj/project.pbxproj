@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		ADC0A9CD1506237F00DEAA09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC0A9CC1506237F00DEAA09 /* Foundation.framework */; };
-		ADC0A9D31506237F00DEAA09 /* DXDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC0A9D21506237F00DEAA09 /* DXDomain.m */; };
 		ADC0A9DB1506237F00DEAA09 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC0A9DA1506237F00DEAA09 /* SenTestingKit.framework */; };
 		ADC0A9DD1506237F00DEAA09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC0A9DC1506237F00DEAA09 /* UIKit.framework */; };
 		ADC0A9DE1506237F00DEAA09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC0A9CC1506237F00DEAA09 /* Foundation.framework */; };
 		ADC0A9E11506237F00DEAA09 /* libDXDomain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC0A9C91506237F00DEAA09 /* libDXDomain.a */; };
 		ADC0A9E71506237F00DEAA09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADC0A9E51506237F00DEAA09 /* InfoPlist.strings */; };
 		ADC0A9EA1506237F00DEAA09 /* DXDomainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC0A9E91506237F00DEAA09 /* DXDomainTests.m */; };
+		ADC0A9F9150623AC00DEAA09 /* DXDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC0A9F8150623AC00DEAA09 /* DXDomain.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +30,15 @@
 /* Begin PBXFileReference section */
 		ADC0A9C91506237F00DEAA09 /* libDXDomain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDXDomain.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC0A9CC1506237F00DEAA09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		ADC0A9D01506237F00DEAA09 /* DXDomain-Prefix.pch */ = {isa = PBXFileReference; path = "DXDomain-Prefix.pch"; sourceTree = "<group>"; };
-		ADC0A9D11506237F00DEAA09 /* DXDomain.h */ = {isa = PBXFileReference; path = DXDomain.h; sourceTree = "<group>"; };
-		ADC0A9D21506237F00DEAA09 /* DXDomain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXDomain.m; sourceTree = "<group>"; };
+		ADC0A9D01506237F00DEAA09 /* DXDomain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DXDomain-Prefix.pch"; sourceTree = "<group>"; };
 		ADC0A9D91506237F00DEAA09 /* DXDomainTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXDomainTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC0A9DA1506237F00DEAA09 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		ADC0A9DC1506237F00DEAA09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		ADC0A9E41506237F00DEAA09 /* DXDomainTests-Info.plist */ = {isa = PBXFileReference; path = "DXDomainTests-Info.plist"; sourceTree = "<group>"; };
+		ADC0A9E41506237F00DEAA09 /* DXDomainTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DXDomainTests-Info.plist"; sourceTree = "<group>"; };
 		ADC0A9E61506237F00DEAA09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ADC0A9E81506237F00DEAA09 /* DXDomainTests.h */ = {isa = PBXFileReference; path = DXDomainTests.h; sourceTree = "<group>"; };
+		ADC0A9E81506237F00DEAA09 /* DXDomainTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXDomainTests.h; sourceTree = "<group>"; };
 		ADC0A9E91506237F00DEAA09 /* DXDomainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXDomainTests.m; sourceTree = "<group>"; };
+		ADC0A9F8150623AC00DEAA09 /* DXDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDomain.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +96,7 @@
 		ADC0A9CE1506237F00DEAA09 /* DXDomain */ = {
 			isa = PBXGroup;
 			children = (
-				ADC0A9D11506237F00DEAA09 /* DXDomain.h */,
-				ADC0A9D21506237F00DEAA09 /* DXDomain.m */,
+				ADC0A9F7150623A000DEAA09 /* Code */,
 				ADC0A9CF1506237F00DEAA09 /* Supporting Files */,
 			);
 			path = DXDomain;
@@ -131,6 +129,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ADC0A9F7150623A000DEAA09 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0A9F8150623AC00DEAA09 /* DXDomain.h */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -138,6 +144,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC0A9F9150623AC00DEAA09 /* DXDomain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC0A9D31506237F00DEAA09 /* DXDomain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +394,7 @@
 				ADC0A9EF1506237F00DEAA09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADC0A9F01506237F00DEAA09 /* Build configuration list for PBXNativeTarget "DXDomainTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +403,7 @@
 				ADC0A9F21506237F00DEAA09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

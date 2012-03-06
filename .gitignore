@@ -1,0 +1,14 @@
+.DS_Store
+*.xcodeproj/**
+!*.xcodeproj/*.pbxproj
+
+*.xcworkspace/**
+!*.xcworkspace/*.xcworkspacedata
+
+Pods
+Podfile.lock
+.idea
+
+Modules/*/*.xcodeproj/**
+!Modules/*/*.xcodeproj/*.pbxproj
+
