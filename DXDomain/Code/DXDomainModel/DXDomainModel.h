@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SMModelObject.h"
 
-@interface DXDomainModel : NSObject
+@interface DXDomainModel : SMModelObject
 
 @end
