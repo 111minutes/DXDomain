@@ -15,6 +15,7 @@
 		ADC0A9E71506237F00DEAA09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADC0A9E51506237F00DEAA09 /* InfoPlist.strings */; };
 		ADC0A9EA1506237F00DEAA09 /* DXDomainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC0A9E91506237F00DEAA09 /* DXDomainTests.m */; };
 		ADC0A9F9150623AC00DEAA09 /* DXDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = ADC0A9F8150623AC00DEAA09 /* DXDomain.h */; };
+		ADC0A9FD1506246200DEAA09 /* DXDomainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC0A9FC1506246200DEAA09 /* DXDomainModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 		ADC0A9E81506237F00DEAA09 /* DXDomainTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXDomainTests.h; sourceTree = "<group>"; };
 		ADC0A9E91506237F00DEAA09 /* DXDomainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXDomainTests.m; sourceTree = "<group>"; };
 		ADC0A9F8150623AC00DEAA09 /* DXDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDomain.h; sourceTree = "<group>"; };
+		ADC0A9FB1506246200DEAA09 /* DXDomainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDomainModel.h; sourceTree = "<group>"; };
+		ADC0A9FC1506246200DEAA09 /* DXDomainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXDomainModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,9 +135,19 @@
 		ADC0A9F7150623A000DEAA09 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				ADC0A9FA1506246200DEAA09 /* DXDomainModel */,
 				ADC0A9F8150623AC00DEAA09 /* DXDomain.h */,
 			);
 			path = Code;
+			sourceTree = "<group>";
+		};
+		ADC0A9FA1506246200DEAA09 /* DXDomainModel */ = {
+			isa = PBXGroup;
+			children = (
+				ADC0A9FB1506246200DEAA09 /* DXDomainModel.h */,
+				ADC0A9FC1506246200DEAA09 /* DXDomainModel.m */,
+			);
+			path = DXDomainModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC0A9EA1506237F00DEAA09 /* DXDomainTests.m in Sources */,
+				ADC0A9FD1506246200DEAA09 /* DXDomainModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

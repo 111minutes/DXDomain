@@ -6,3 +6,4 @@
 //  Copyright (c) 2012 DIMALEX. All rights reserved.
 //
 
+#import "DXDomainModel.h"
