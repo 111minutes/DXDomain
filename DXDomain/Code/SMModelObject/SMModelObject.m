@@ -40,8 +40,14 @@ static NSMutableDictionary *keyNames = nil;
 - (id) initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     if (self) {
-		for (NSString *name in [self allKeys])
-			[self setValue:[aDecoder decodeObjectForKey:name] forKey:name];
+		for (NSString *name in [self allKeys]) {
+
+			id value = [aDecoder decodeObjectForKey:name];
+
+			if (value) {
+				[self setValue:value forKey:name];
+			}
+		}
 	}
 	return self;
 }
