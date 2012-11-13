@@ -41,7 +41,12 @@ static NSMutableDictionary *keyNames = nil;
     self = [super init];
     if (self) {
 		for (NSString *name in [self allKeys]) {
-			[self setValue:[aDecoder decodeObjectForKey:name] forKey:name];
+            
+            id decodedObject = [aDecoder decodeObjectForKey:name];
+            
+            if (decodedObject) {
+                [self setValue:decodedObject forKey:name];
+            }
         }
 	}
 	return self;
@@ -54,7 +59,7 @@ static NSMutableDictionary *keyNames = nil;
         
         NSObject *obj = [self valueForKey:name];
         
-        if ([obj conformsToProtocol:@protocol(NSCoding)]) {
+        if (obj && [obj conformsToProtocol:@protocol(NSCoding)]) {
             [aCoder encodeObject:obj forKey:name];
         }
     }
