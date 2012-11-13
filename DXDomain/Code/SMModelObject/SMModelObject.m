@@ -40,8 +40,9 @@ static NSMutableDictionary *keyNames = nil;
 - (id) initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     if (self) {
-		for (NSString *name in [self allKeys])
+		for (NSString *name in [self allKeys]) {
 			[self setValue:[aDecoder decodeObjectForKey:name] forKey:name];
+        }
 	}
 	return self;
 }
@@ -49,8 +50,14 @@ static NSMutableDictionary *keyNames = nil;
 // NSCoder implementation, for archiving
 - (void) encodeWithCoder:(NSCoder *)aCoder {
 
-	for (NSString *name in [self allKeys])
-		[aCoder encodeObject:[self valueForKey:name] forKey:name];
+	for (NSString *name in [self allKeys]) {
+        
+        NSObject *obj = [self valueForKey:name];
+        
+        if ([obj conformsToProtocol:@protocol(NSCoding)]) {
+            [aCoder encodeObject:obj forKey:name];
+        }
+    }
 }
 
 // NSCopying implementation
@@ -58,8 +65,9 @@ static NSMutableDictionary *keyNames = nil;
 	
 	id copied = [[[self class] alloc] init];
 	
-	for (NSString *name in [self allKeys])
+	for (NSString *name in [self allKeys]) {
 		[copied setValue:[self valueForKey:name] forKey:name];
+    }
 	
 	return copied;
 }
